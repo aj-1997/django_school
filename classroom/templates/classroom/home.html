@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome to the  online Quiz <span class="icon-emo-happy"></span></h2>
+  <p class="lead">
+    If you already have an account, go ahead and <a class="btn btn-primary" href="{% url 'login' %}">log in</a>.
+
+     <p>If you are new to Online Quiz get started
+    by creating a <a class="btn btn-secondary" href="{% url 'student_signup' %}">student account</a></p>
+     <p>For Teacher Registration <a class="btn btn-success" href="{% url 'teacher_signup' %}">Faculty account</a>.</p>
+  </p>
+  <hr>
+  <h3>What's this about?</h3>
+  <p>
+    This School Quiz online  application is an example I created to illustrate a <a href="#">blog post about how to implement multiple user types</a>.
+    In this application, users can sign up as a student or a teacher. Teachers can create quizzes and students can answer quizzes
+    based on their interests.
+  </p>
+  <p>The objective of the Online Quiz Tool is to provide better information for the users of this system for better results for their maintainence in student examination schedule details and grading details.</p>
+  <p>This application is used to conduct online  examination.  The students can sit at individual terminals and login to write the exam in the given duration.</p>
+  <p>
+      The following drawbacks of existing system emphasize the need for computerization:
+     <p>&emsp;1. A lot of copies of question papers have to be made</p>
+        <p>&emsp;2. A lot of correction work hence delay in giving the results</p>
+       <p>&emsp;3. A lot of tabulation work for each subject results</p>
+    <p>&emsp;4.It gives appropriate access to the authorized users depending on their permissions.</p>
+
+  </p>
+  <p style="text-align: center">Copyrighted to School Quiz</p>
+<!--
+ <p></p>
+  <p>Want to run this code locally? <a href="https://github.com/sibtc/django-multiple-user-types-example/blob/master/README.md">Read detailed instructions on how to run this project</a>.</p>
+  <p class="mb-0">Vitor Freitas<br><a href="https://twitter.com/vitorfs/">@vitorfs</a></p>
+-->
+{% endblock %}
